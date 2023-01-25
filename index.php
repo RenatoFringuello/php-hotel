@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>php hotel</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
     <?php
@@ -49,24 +51,24 @@
     ?>
 
     <table>
-        <thead>
+        <thead class="bg-primary text-white">
             <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Parking</th>
-                <th>Vote</th>
-                <th>Distance to Center</th>
+                <th class="text-center p-3">Name</th>
+                <th class="text-center p-3">Description</th>
+                <th class="text-center p-3">Parking</th>
+                <th class="text-center p-3">Vote</th>
+                <th class="text-center p-3">Distance to Center</th>
             </tr>
         </thead>
         <tbody>
             <?php
                 foreach($hotels as $hotel){
                     echo '<tr>
-                            <td>'.$hotel['name'].'</td>
-                            <td>'.$hotel['description'].'</td>
-                            <td>'.$hotel['parking'].'</td>
-                            <td>'.$hotel['vote'].'</td>
-                            <td>'.$hotel['distance_to_center'].'</td>
+                            <td class="text-center p-2 bg-light">'.$hotel['name'].'</td>
+                            <td class="text-center p-2 bg-light">'.$hotel['description'].'</td>
+                            <td class="text-center p-2 bg-light">'.$hotel['parking'].'</td>
+                            <td class="text-center p-2 bg-light">'.$hotel['vote'].'</td>
+                            <td class="text-center p-2 bg-light">'.$hotel['distance_to_center'].'</td>
                          </tr>';
                 }
             ?>
